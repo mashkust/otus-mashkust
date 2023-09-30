@@ -1,8 +1,9 @@
 import { generateCard } from "./generateCard/generateCard";
 import { deleteCard } from "./deleteCard/deleteCard";
+import { IValuets } from "type";
 import { generateOption } from "./generateOption/generateOption";
 
-export const generateSelect = (valuets) => {
+export const generateSelect = (valuets: IValuets) => {
   const valute = valuets.Valute;
 
   const select = document.createElement("select");

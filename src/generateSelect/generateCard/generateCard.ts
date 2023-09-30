@@ -1,8 +1,9 @@
 import { formatDate } from "./utils";
 import { generateTag } from "../generateTag/generateTag";
+import { IGenerateCard } from "type";
 
 //генериурет карточку
-export const generateCard = ({ valuets, value }) => {
+export const generateCard = ({ valuets, value }: IGenerateCard) => {
   const valute = valuets.Valute;
   const [newDate, prevDate] = [
     new Date(valuets.Date),

@@ -1,7 +1,8 @@
+import { IGenerateOption } from "type";
 import { generateTag } from "../generateTag/generateTag";
 
 //гененирует option селектора
-export const generateOption = ({ select, valute }) => {
+export const generateOption = ({ select, valute }: IGenerateOption) => {
   //дефолтные данные
   generateTag({
     element: select,

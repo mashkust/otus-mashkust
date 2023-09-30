@@ -1,6 +1,9 @@
+import { IGenerateTag } from "type";
+
 //гененирует теги по родительскому элементу и тексту
-export const generateTag = ({ element, text, key }) => {
-  let tag = document.createElement("p");
+export const generateTag = ({ element, text, key }: IGenerateTag) => {
+  let tag: HTMLParagraphElement | HTMLOptionElement =
+    document.createElement("p");
   tag.textContent = text;
   //создает option
   if (key) {
