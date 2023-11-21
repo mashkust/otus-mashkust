@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(255, 255, 255);
+  .select {
+    margin: 30px 30px 30px 30px;
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .card {
+    border: 0.5rem outset rgb(23, 22, 22);
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+    width: 500px;
+    :first-child {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  .card > p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
